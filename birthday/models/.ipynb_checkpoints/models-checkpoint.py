@@ -8,7 +8,7 @@ class SaleExtend(models.Model):
   reference_number = fields.Char('Reference Number')
   insurance_number = fields.Char('Insurance Number')
  
-  @api.multi
+
   def _prepare_invoice(self):
         res = super(SaleExtend, self).prepare_invoice()
         res['reference_number'] = self.reference_number
