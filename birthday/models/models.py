@@ -16,7 +16,7 @@ class SaleExtend(models.Model):
         return res
 
 class InvoiceExtend(models.Model):
-  _inherit = 'account.invoice'
+  _inherit = 'account.move'
 
   reference_number = fields.Char('Reference Number')
   insurance_number = fields.Char('Insurance Number')    
